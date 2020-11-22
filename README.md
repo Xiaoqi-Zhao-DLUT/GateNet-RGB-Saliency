@@ -1,8 +1,20 @@
-# GateNet
-(ECCV 2020 Oral)  Suppress and Balance: A Simple Gated Network for Salient Object Detection  
-https://arxiv.org/pdf/2007.08074.pdf  
-[Introduction_PPT](./2852.pdf)  
-As we are currently using our algorithm in a related competition, we will release the code around November. (Both DANet and GateNet) 
+<p align="center">
+
+  <img src="./image/GateNet_logo.png" alt="Logo" width="210" height="auto">
+
+
+  <h3 align="center">Suppress and Balance: A Simple Gated Network for Salient Object Detection</h3>
+
+  <p align="center">
+    Xiaoqi Zhao*, Youwei Pang*, Lihe Zhang, Huchuan Lu, Lei Zhang
+    <br />
+    <a href="https://arxiv.org/pdf/2007.08074.pdf"><strong>⭐ arXiv »</strong></a>
+    <a href="./2852.pdf" target="_black">[Slides]</a>
+    <br />
+  </p>
+</p>
+
+The official repo of the ECCV 2020 (oral) paper, Suppress and Balance: A Simple Gated Network for Salient Object Detection.  
 ## Results(RGB/RGB-D SOD, VOS)
 RGB SOD: [BaiduYunPan(4ha3)](https://pan.baidu.com/s/1v967xG867F72Wfy_0J-KbQ) 
 RGB-D SOD: [BaiduYunPan(9her)](https://pan.baidu.com/s/1mvgw_9w22PP5fpvHEDAx3A)
