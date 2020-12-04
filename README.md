@@ -42,8 +42,8 @@ We also release the new baseline, Gated FPN in [model_GatedFPN_newbaseline.py]. 
 3.Run generate_visfeamaps.py (can visualize feature maps)  
 4.Run test_metric_score.py (can evaluate the predicted saliency maps in terms of fmax,fmean,wfm,sm,em,mae). You also can use the toolkit released by us:https://github.com/lartpang/Py-SOD-VOS-EvalToolkit.
 
-We also recommend you to use another code released by Jun Wei https://github.com/weijun88/F3Net. Based on the training strategy of this code, our performance can be further improved( but for fair comparisons, we do not use the multi-scale training trick), the performance as follows:
-(ResNet-50-GateNet)
+We also recommend you to use another code released by Jun Wei https://github.com/weijun88/F3Net. Based on the training strategy of this code, our performance can be further improved( but for fair comparisons, we do not use the multi-scale training trick), the performance as follows:  
+(ResNet-50-GateNet)  
 dataset: DUTS MAE: 0.0375 maxF: 0.8899 avgF: 0.8199 wfm: 0.8225 Sm: 0.8889 Em: 0.9133  
 dataset: HKU-IS MAE: 0.0317 maxF: 0.9353 avgF: 0.9010 wfm: 0.8873 Sm: 0.9187 Em: 0.9558  
 dataset: ECSSD MAE: 0.0355 maxF: 0.9486 avgF: 0.9217 wfm: 0.9049 Sm: 0.9269 Em: 0.9513  
