@@ -23,6 +23,33 @@ VOS: [BaiduYunPan(0hue)](https://pan.baidu.com/s/1somDG0QlupQ9kwWccVg1aQ)
 * (ECCV 2020) A Single Stream Network for Robust and Real-time RGB-D Salient Object Detection: https://github.com/Xiaoqi-Zhao-DLUT/DANet-RGBD-Saliency
 * (ECCV 2020) Hierarchical Dynamic Filtering Network for RGB-D Salient Object Detection: https://github.com/lartpang/HDFNet
 * (CVPR 2020) Multi-scale Interactive Network for Salient Object Detection: https://github.com/lartpang/MINet
+## Trained Model
+You can download the trained VGG-16/ResNet-50 GateNet model at [BaiduYunPan(s3l2)](https://pan.baidu.com/s/1-S9fhoCu8fHwi5WKjUCf_g).
+## Requirement
+* Python 3.7
+* PyTorch 1.5.0
+* torchvision
+* numpy
+* Pillow
+* Cython
+## Training
+1.Set the path of training sets in config.py  
+2.Run train.py  
+We also release the new baseline, Gated FPN in [model_GatedFPN_newbaseline.py]. You can use it for future reserach.
+## Testing
+1.Set the path of testing sets in config.py    
+2.Run generate_salmap.py (can generate the predicted saliency maps)  
+3.Run generate_visfeamaps.py (can visualize feature maps)  
+4.Run test_metric_score.py (can evaluate the predicted saliency maps in terms of fmax,fmean,wfm,sm,em,mae). You also can use the toolkit released by us:https://github.com/lartpang/Py-SOD-VOS-EvalToolkit.
+
+We also recommend you to use another code released by Jun Wei https://github.com/weijun88/F3Net. Based on the training strategy of this code, our performance can be further improved( but for fair comparisons, we do not use the multi-scale training trick), the performance as follows:
+(ResNet-50-GateNet)
+dataset: DUTS MAE: 0.0375 maxF: 0.8899 avgF: 0.8199 wfm: 0.8225 Sm: 0.8889 Em: 0.9133  
+dataset: HKU-IS MAE: 0.0317 maxF: 0.9353 avgF: 0.9010 wfm: 0.8873 Sm: 0.9187 Em: 0.9558  
+dataset: ECSSD MAE: 0.0355 maxF: 0.9486 avgF: 0.9217 wfm: 0.9049 Sm: 0.9269 Em: 0.9513  
+dataset: DUT-OMRON MAE: 0.0536 maxF: 0.8157 avgF: 0.7497 wfm: 0.7365 Sm: 0.8386 Em: 0.8697  
+dataset: PASCAL-S MAE: 0.0648 maxF: 0.8882 avgF: 0.8400 wfm: 0.8213 Sm: 0.8625 Em: 0.8958  
+In addition, this performance is based on a model that reduces the number of output channels of Fold-ASPP by half, so the entire parameter and model size can be greatly reduced. We believe that Fold-ASPP can still be optimized in the future.
 ## BibTex  
 ```
 @inproceedings{GateNet,
