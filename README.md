@@ -44,7 +44,7 @@ We survey 200+ works on binary segmenation of different CD concepts.
     <img src="./image/survey1.png"/> <br />
 </p>
 <p align="center">
-    <img src="./image/survey2.png"/> <br />
+    <img src="./image/survey_2.png"/> <br />
 </p>
 <p align="center">
     <img src="./image/motivation1.png"/> <br />
